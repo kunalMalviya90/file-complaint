@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="filecomplaint.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>File Complaint</title> 
+</head>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="images/IMClogo.png" alt="">
+            </div>
+
+            <span class="logo_name">Employee Complaint Portal</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="dashboard.html">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Dahsboard</span>
+                </a></li>
+                <li><a href="filecomplaint.html">
+                    <i class="uil uil-files-landscapes"></i>
+                    <span class="link-name">File Complaint</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-chart"></i>
+                    <span class="link-name">My Complaints</span>
+                </a></li>
+                <li><a href="finalESP.html">
+                    <i class="uil uil-slack"></i>
+                    <span class="link-name">Admin Login</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-comment-alt-message"></i>
+                    <span class="link-name">IMC</span>
+                </a></li>
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="#">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+
+                <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                    <span class="link-name">Dark Mode</span>
+                </a>
+
+                <div class="mode-toggle">
+                  <span class="switch"></span>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+        
+        <div class="container">
+            <form id="complaintForm">
+                <h2>Complaint Form</h2>
+                <div class="form-group">
+                    <label for="employeeName">Employee Name *</label>
+                    <input type="text" id="employeeName" name="employeeName" required>
+                </div>
+                <div class="form-group">
+                    <label for="employeeCode">Employee Code *</label>
+                    <input type="text" id="employeeCode" name="employeeCode" required>
+                </div>
+                <div class="form-group">
+                    <label for="complaintTitle">Complaint Title *</label>
+                    <input type="text" id="complaintTitle" name="complaintTitle" required>
+                </div>
+                <div class="form-group">
+                    <label for="department">Department *</label>
+                    <select id="department" name="department" required>
+                        <option value="" disabled selected>-Select-</option>
+                        <option value="IT">IT</option>
+                        <option value="HR">HR</option>
+                        <option value="Finance">Finance</option>
+                        <option value="Operations">Operations</option>
+                        <option value="Admin">Admin</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="complaintDate">Complaint Date *</label>
+                    <input type="date" id="complaintDate" name="complaintDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="complaintDetails">Complaint Details *</label>
+                    <textarea id="complaintDetails" name="complaintDetails" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="complaintAttachment">Complaint Attachment *</label>
+                    <input type="file" id="complaintAttachment" name="complaintAttachment" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+
+
+
+    </section>
+
+    <script src="filecomplaint.js"></script>
+</body>
+</html>
